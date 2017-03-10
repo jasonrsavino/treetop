@@ -1,0 +1,10 @@
+// Basic setup styles
+@import "global/variables";
+@import "global/mixins";
+@import "global/reset";
+
+// Pattern specific styles
+@import "../_patterns/**/*";
+
+// Anything Else
+@import "global/theme";

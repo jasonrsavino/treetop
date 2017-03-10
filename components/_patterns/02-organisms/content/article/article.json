@@ -1,0 +1,31 @@
+{
+    "attributes": {
+        "Attribute()": {
+            "class": ["node", "node--article"]
+        }
+    },
+    "label": "Article Node",
+    "page": true,
+    "display_submitted": true,
+    "author_name": "John Smith",
+    "date": "1/1/2017",
+    "content": {
+      "join()": [
+          "molecules-image",
+          "molecules-text-with-summary",
+          {
+            "include()": {
+              "pattern": "molecules-term-reference",
+              "with": {
+                "attributes": {
+                  "Attribute()": {
+                    "class": ["inline__links"]
+                  }
+                }
+              }
+            }
+          },
+          "molecules-comment"
+        ]
+    }
+}

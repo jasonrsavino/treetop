@@ -1,0 +1,47 @@
+{
+  "name": "treetop",
+  "description": "Drupal 8 theme with Pattern Lab integration",
+  "licenses": "MIT",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jasonrsavino/treetop/treetop.git"
+  },
+  "bugs": "https://github.com/jasonrsavino/treetop/issues",
+  "author": {
+    "email": "jasonrsavino@gmail.com",
+    "name": "Jason Savino",
+    "url": "http://github.com/jasonrsavino"
+  },
+  "keywords": [
+    "Pattern Lab",
+    "Atomic Web Design",
+    "Node",
+    "Grunt",
+    "Javascript",
+    "Drupal"
+  ],
+  "dirs": {
+    "pl": "./pattern-lab",
+    "src" : {
+      "root": "./components",
+      "patterns": "./components/_patterns",
+      "css": "./components/scss",
+      "js" : "./components/js",
+      "images" : "./components/images",
+      "fonts" : "./components/fonts"
+    },
+    "theme": "./templates",
+    "grunt": "config/grunt"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-shell": "^2.1.0",
+    "minimist": "^1.2.0"
+  },
+  "scripts": {}
+}

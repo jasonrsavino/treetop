@@ -1,0 +1,30 @@
+{#
+/**
+ * @see
+ */
+#}
+{%
+  set classes = [
+    'field',
+    'field--name-' ~ field_name|clean_class,
+    'field--type-' ~ field_type|clean_class,
+    'field--label-' ~ label_display,
+    'clearfix',
+  ]
+%}
+{%
+  set title_classes = [
+    'field__label',
+    label_display == 'inline' ? 'inline',
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {% if not label_hidden %}
+    <h3{{ title_attributes.addClass(title_classes) }}>{{ label }}</h3>
+  {% endif %}
+  <ul class="links field__items">
+    {% for item in items %}
+      <li{{ item.attributes }}>{{ item.content }}</li>
+    {% endfor %}
+  </ul>
+</div>

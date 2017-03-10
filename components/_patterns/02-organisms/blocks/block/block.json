@@ -1,0 +1,15 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": ["links", "inline"],
+      "id": "block-template"
+    }
+  },
+  "title_attributes": {
+    "Attribute()": {
+      "id": "block-template-title"
+    }
+  },
+  "label": "Block",
+  "content": "molecules-text-long"
+}

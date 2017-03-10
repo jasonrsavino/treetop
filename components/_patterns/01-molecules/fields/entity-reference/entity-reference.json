@@ -1,0 +1,29 @@
+{
+    "label_hidden": false,
+    "multiple": true,
+    "label": "Entities",
+    "attributes": {
+        "Attribute()": {
+            "class": ["field", "field--entity-reference"]
+        }
+    },
+    "title_attributes": {
+        "Attribute()": {
+            "class": ["field__title"]
+        }
+    },
+    "items": [
+        {
+            "content": "<a href=\"#\">Entity 1</a>"
+        },
+        {
+            "content": "<a href=\"#\">Entity 2</a>"
+        },
+        {
+            "content": "<a href=\"#\">Entity 3</a>"
+        },
+        {
+            "content": "<a href=\"#\">Entity 4</a>"
+        }
+    ]
+}

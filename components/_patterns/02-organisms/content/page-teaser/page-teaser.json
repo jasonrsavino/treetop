@@ -1,0 +1,50 @@
+{
+    "attributes": {
+        "Attribute()": {
+            "class": ["node", "node--page"]
+        }
+    },
+    "label": "Basic Page Node",
+    "url":"#",
+    "page": false,
+    "display_submitted": false,
+    "content": {
+        "join()": [
+          {
+            "include()": {
+              "pattern": "molecules-text-with-summary",
+              "with": {
+                "attributes": {
+                    "Attribute()": {
+                        "class": ["field--body--teaser"]
+                    }
+                },
+                "items": [
+                  {
+                    "content": "<p>Node body field. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ...</p>"
+                  }
+                ]
+              }
+            }
+          },
+          {
+              "include()": {
+                  "pattern": "molecules-links",
+                  "with": {
+                      "attributes": {
+                          "Attribute()": {
+                              "class": ["links", "inline", "node__links"]
+                          }
+                      },
+                      "links": {
+                          "node-readmore": {
+                              "link": "<a href=\"\">Read more</a>"
+                          }
+                      }
+                  },
+                  "only": true
+              }
+          }
+      ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "textfield",
+  "attributes": {
+    "Attribute()": {
+      "id": "form-element-sample"
+    }
+  },
+  "label_display": "before",
+  "label": {
+    "include()": {
+      "pattern": "atoms-form-element-label",
+      "with": {
+        "title_display": "before",
+        "attributes": {
+          "Attribute()": {
+            "for": "form-element-sample"
+          }
+        }
+      }
+    }
+  },
+  "children": {
+    "include()": {
+      "pattern": "molecules-input"
+    }
+  },
+  "description_display": "after",
+  "description": {
+    "content": "Element description: <i>Consequat macto typicus vero</i>",
+    "attributes": {
+      "Attribute()": {
+        "id": "edit-textfield--description"
+      }
+    }
+  }
+}

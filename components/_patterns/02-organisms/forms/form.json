@@ -1,0 +1,17 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "action": "/",
+      "class": ["admin-settings"],
+      "method": "post",
+      "id": "admin-settings"
+    }
+  },
+  "children": {
+    "join()": [
+      "molecules-container",
+      "molecules-container",
+      "molecules-container"
+    ]
+  }
+}

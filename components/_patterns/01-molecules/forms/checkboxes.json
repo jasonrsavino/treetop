@@ -1,0 +1,71 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "id": "edit-checkboxes--2"
+    }
+  },
+  "children": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "molecules-input",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "type": "checkbox",
+                "id": "edit-checkbox--one",
+                "name": "checkboxes[one]",
+                "value": "one",
+                "class": ["form-checkbox"]
+              }
+            },
+            "children": {
+              "include()": {
+                "pattern": "atoms-form-element-label",
+                "with": {
+                  "title": "Checkbox Label One",
+                  "attributes": {
+                    "Attribute()": {
+                      "for": "edit-checkbox--one"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-input",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "type": "checkbox",
+                "id": "edit-checkbox--two",
+                "name": "checkboxes[two]",
+                "value": "two",
+                "class": ["form-checkbox"]
+              }
+            },
+            "children": {
+              "include()": {
+                "pattern": "atoms-form-element-label",
+                "with": {
+                  "title": "Checkbox Label Two",
+                  "attributes": {
+                    "Attribute()": {
+                      "for": "edit-checkbox--two"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+    ]
+  }
+}

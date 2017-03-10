@@ -1,0 +1,25 @@
+name: treetop
+description: A Drupal theme whose Twig templates are integrated with Pattern Lab.
+type: theme
+base theme: stable
+core: 8.x
+
+libraries:
+  - treetop/global-styling
+
+component-libraries:
+  atoms:
+    paths:
+      - components/_patterns/00-atoms
+  molecules:
+    paths:
+      - components/_patterns/01-molecules
+  organisms:
+    paths:
+      - components/_patterns/02-organisms
+  templates:
+    paths:
+      - components/_patterns/03-templates
+  pages:
+    paths:
+      - components/_patterns/04-pages

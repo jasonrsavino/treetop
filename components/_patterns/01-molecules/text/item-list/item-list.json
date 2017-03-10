@@ -1,0 +1,23 @@
+{
+    "title": "Item List",
+    "list_type": "ul",
+    "attributes": {
+        "Attribute()": {
+            "class": ["links", "inline"]
+        }
+    },
+    "items": [
+        {
+            "value": "<a href=\"#\">Link 1</a>"
+        },
+        {
+            "value": "<a href=\"#\">Link 2</a>"
+        },
+        {
+            "value": "<a href=\"#\">Link 3</a>"
+        },
+        {
+            "value": "<a href=\"#\">Link 4</a>"
+        }
+    ]
+}

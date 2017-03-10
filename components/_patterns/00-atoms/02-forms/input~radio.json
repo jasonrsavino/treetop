@@ -1,0 +1,11 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "type": "radio",
+      "id": "edit-radio--one",
+      "name": "radio[one]",
+      "value": "one",
+      "class": ["form-radio"]
+    }
+  }
+}

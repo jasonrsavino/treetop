@@ -1,0 +1,15 @@
+{
+    "attributes": {
+        "Attribute()": {
+            "class": ["node", "node--page"]
+        }
+    },
+    "label": "Basic Page Node",
+    "page": true,
+    "display_submitted": false,
+    "content": {
+      "join()": [
+        "molecules-text-with-summary"
+      ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "label": "Comments",
+  "label_hidden": false,
+  "comments": {
+    "join()": [
+      "organisms-comment",
+      "organisms-comment",
+      "organisms-comment"
+    ]
+  }
+}

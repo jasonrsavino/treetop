@@ -1,0 +1,13 @@
+{
+  "label_hidden": true,
+  "attributes": {
+    "Attribute()": {
+      "class": ["field", "field--image"]
+    }
+  },
+  "items": [
+    {
+      "content": "atoms-image"
+    }
+  ]
+}

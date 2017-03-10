@@ -1,0 +1,13 @@
+{
+  "wrapper_attributes": {
+    "Attribute()": {
+      "class": ["form-textarea-wrapper"]
+    }
+  },
+  "attributes": {
+    "Attribute()": {
+      "class": ["js-text-full","text-full"]
+    }
+  },
+  "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut elit vel arcu aliquam molestie ut vel velit. Fusce quis lacus at mauris gravida ultrices eu quis enim. Proin a dolor sed tortor pretium ornare placerat nec nisi. Suspendisse vel ipsum vitae mauris lacinia imperdiet a in neque. Proin tincidunt lacinia pellentesque. Donec in sodales nisi. Mauris imperdiet id lacus et congue.Fusce tincidunt nisi sagittis posuere lacinia. In hac habitasse platea dictumst. Vestibulum at nibh id enim consectetur congue. Etiam non placerat metus. Ut in mi dolor. Etiam est lorem, mattis sit amet elit feugiat, ultrices auctor lorem. Cras vestibulum malesuada quam non cursus. Donec in lorem vel lorem maximus eleifend quis auctor est. Donec mi ante, mollis eget elementum a, molestie quis justo."
+}
