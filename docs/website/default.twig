@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="{{ baseUrl }}/css/theme.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ baseUrl }}/css/theme-fixes.css" type="text/css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+    <link rel="stylesheet" href="{{ baseUrl }}/tipuesearch/css/tipuesearch.css" type="text/css"/>
+</head>
+<body class="wy-body-for-nav">
+
+    <div class="wy-grid-for-nav">
+
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+          <div class="wy-side-scroll">
+              <div class="wy-side-nav-search">
+                  <a href="{{ baseUrl }}/" >{{ title|default('The title') }}</a>
+                  <div class="version">{{ version|default('') }}</div>
+                  <div role="search">
+                  <form action="{{ baseUrl }}/search.html" id="rtd-search-form" class="wy-form">
+                  <input type="text" name="q" id="rtd_search_input" pattern=".{3,}" title="At least 3 characters" placeholder="Search docs" required>
+                  </form>
+                  </div>
+              </div>
+              {% if menu is defined %}
+              <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                  {% for sectionId, section in menu.sections %}
+                      <p class="caption">
+                        <span class="caption-text">{{ section.name }}</span>
+                      </p>
+                      <ul>
+                          {% for itemId, item in section.items %}
+                              <li class="toctree-l1 {{ itemId == currentMenu ? 'current' }} {{ itemId == parentMenu ? 'current' }}">
+                                  <a class="reference internal {{ itemId == currentMenu ? 'current' }}"
+                                     href="{{ item.absoluteUrl|default(baseUrl ~ '/' ~ item.relativeUrl) }}">
+                                      {{ item.text|raw }}
+                                  </a>
+                                  {% if itemId == currentMenu or itemId == parentMenu or itemId == parent2Menu or itemId == parent3Menu %}
+                                    <ul>
+                                    {% for itemId2, item2 in item.submenu.items %}
+                                      <li class="toctree-l2 {{ itemId2 == currentMenu ? 'current' }}  {{ itemId2 == parent2Menu ? 'current' }}">
+                                        <a class="reference internal {{ itemId2 == currentMenu ? 'current' }}"
+                                           href="{{ item2.absoluteUrl|default(baseUrl ~ '/' ~ item2.relativeUrl) }}">
+                                            {{ item2.text|raw }}
+                                        </a>
+                                        {% if itemId2 == currentMenu or itemId2 == parentMenu or itemId2 == parent2Menu or itemId2 == parent3Menu %}
+                                          <ul>
+                                          {% for itemId3, item3 in item2.submenu.items %}
+                                            <li class="toctree-l3 {{ itemId3 == currentMenu ? 'current' }}  {{ itemId3 == parent3Menu ? 'current' }}">
+                                              <a class="reference internal {{ itemId3 == currentMenu ? 'current' }}"
+                                                 href="{{ item3.absoluteUrl|default(baseUrl ~ '/' ~ item3.relativeUrl) }}">
+                                                  {{ item3.text|raw }}
+                                              </a>
+                                             </li>
+                                          {% endfor %}
+                                          </ul>
+                                        {% endif %}
+                                       </li>
+                                    {% endfor %}
+                                    </ul>
+                                  {% endif %}
+                              </li>
+                          {% endfor %}
+                      </ul>
+                  {% endfor %}
+              </div>
+              {% endif %}
+              &nbsp;
+          </div>
+        </nav>
+
+        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+            {# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #}
+            <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+                <a href="{{ baseUrl }}/">{{ title|default('The title') }}</a>
+            </nav>
+
+
+            {# PAGE CONTENT #}
+            <div class="wy-nav-content">
+                <div class="rst-content">
+                    <div role="main" class="document">
+                        {{ content|raw }}
+                    </div>
+
+                    <footer>
+                        <hr/>
+                    </footer>
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script src="{{ baseUrl }}/tipuesearch/tipuesearch_set.js"></script>
+    <script src="{{ baseUrl }}/tipuesearch/tipuesearch.min.js"></script>
+    <script src="{{ baseUrl }}/js/theme.js"></script>
+
+    <script>
+    $(document).ready(function() {
+         $('#rtd_search_input').tipuesearch({
+              'mode': 'live',
+              'show': 20,
+              'showURL': false,
+              'showTime': false
+         });
+    });
+    </script>
+
+    <script>
+        $(function() {
+            // Syntax highlighting
+            hljs.initHighlightingOnLoad();
+        });
+    </script>
+
+</body>
+</html>
