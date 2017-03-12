@@ -19,6 +19,7 @@ exclude:
     - config
     - templates
     - .github
+    - website
 
 # scripts:
 #     # Scripts to execute before generating the website
