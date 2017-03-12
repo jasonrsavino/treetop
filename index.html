@@ -50,7 +50,52 @@
                         <div class="wy-nav-content">
                 <div class="rst-content">
                     <div role="main" class="document">
-                        <h1 id="welcome">Welcome</h1>
+                        <h1 id="treetop-theme">Treetop Theme</h1>
+<p>An <a href="http://bradfrost.com/blog/post/atomic-web-design/">atomic design</a> and <a href="http://patternlab.io">Pattern Lab</a> friendly starting point for new Drupal 8 themes. The theme is built to be used with Pattern Lab.</p>
+<h2 id="installing-development-dependencies">Installing development dependencies</h2>
+<p>Prerequisites: <a href="https://nodejs.org/">npm</a> installed.</p>
+<p>In the Treetop theme root directory run:</p>
+<pre><code class="language-sh">npm install</code></pre>
+<h2 id="integrating-with-drupal">Integrating with Drupal</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Install and enable the <a href="https://www.drupal.org/project/components">Component Libraries module</a>.</p>
+<p>No configuration is needed, the settings are included in the <a href="https://github.com/jasonrsavino/treetop/blob/master/treetop.info.yml">treetop.info.yml</a> file.</p>
+<h2 id="integrating-with-pattern-lab">Integrating with Pattern Lab</h2>
+<h3 id="prerequisites-1">Prerequisites</h3>
+<p><a href="https://getcomposer.org/">Composer</a> installed.</p>
+<h3 id="first-time-install">First Time Install</h3>
+<ol>
+<li>In the Treetop theme root directory run: <code>git clone https://github.com/pattern-lab/edition-php-drupal-standard pattern-lab</code></li>
+<li>Then <code>cd pattern-lab</code> directory and run: <code>composer install</code>. If asked about replacing files, do it.</li>
+<li>
+<p>In the file <code>pattern-lab/config/config.yml</code> change <code>sourceDir</code> and <code>twigAutoescape</code>:</p>
+<pre><code class="language-yml">sourceDir: ../components
+twigAutoescape: false</code></pre>
+</li>
+<li>While still in the <code>pattern-lab</code> directory run: <code>php core/console --generate</code></li>
+</ol>
+<h2 id="using-the-theme">Using the theme</h2>
+<p>Generally you will be running the Pattern Lab on your local environment during development. The theme has been built using <a href="http://gruntjs.com">Grunt</a> tasks to automate some of the process involved in working with Pattern Lab.</p>
+<ul>
+<li>To generate the Pattern Lab files
+<code>grunt pl:generate</code></li>
+<li>Run the Pattern Lab server and watch for changes
+<code>grunt pl:server</code></li>
+</ul>
+<h1 id="contributing-to-treetop">Contributing to Treetop</h1>
+<p>If you'd like to contribute to Treetop, please do so! There is always a lot of ground to cover and something for your wheelhouse.</p>
+<p>No pull request is too small. Check out any <a href="https://github.com/jasonrsavino/treetop/labels/help%20wanted%20-%20up%20for%20grabs">up for grabs issues</a> as a starting point.</p>
+<h2 id="guidelines">Guidelines</h2>
+<ol>
+<li>Please keep your pull requests concise and limited to <strong>ONE</strong> change at a time. This makes reviewing and testing so much easier.</li>
+<li><em>ALWAYS</em> submit pull requests against the <a href="https://github.com/jasonrsavino/treetop/tree/dev">dev branch</a>.</li>
+</ol>
+<h2 id="coding-style">Coding style</h2>
+<p>Two files combine within the project to define and maintain our coding style.</p>
+<ul>
+<li>The <code>.editorconfig</code> controls spaces / tabs within supported editors. Check out their <a href="http://editorconfig.org/">site</a>.</li>
+<li>The <code>.eslintrc</code> defines our javascript standards. Some editors will evaluate this real-time - otherwise it's run using <code>grunt|gulp build</code></li>
+</ul>
                     </div>
 
                     <footer>
