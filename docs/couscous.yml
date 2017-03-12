@@ -41,4 +41,11 @@ title: Treetop Theme
 
 # Base URL of the published website (no "/" at the end!)
 # You are advised to set and use this variable to write your links in the HTML layouts
-baseUrl: http://jasonrsavino.github.io/treetop
+baseUrl: https://jasonrsavino.github.io/treetop
+
+menu:
+    sections:
+        components:
+            name: Patterns
+            name: Templates
+            name: Misc
