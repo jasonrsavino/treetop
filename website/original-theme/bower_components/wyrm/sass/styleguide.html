@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treetop Theme</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="http://jasonrsavino.github.io/treetop/css/theme.css" type="text/css"/>
+    <link rel="stylesheet" href="http://jasonrsavino.github.io/treetop/css/theme-fixes.css" type="text/css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+    <link rel="stylesheet" href="http://jasonrsavino.github.io/treetop/tipuesearch/css/tipuesearch.css" type="text/css"/>
+</head>
+<body class="wy-body-for-nav">
+
+    <div class="wy-grid-for-nav">
+
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+          <div class="wy-side-scroll">
+              <div class="wy-side-nav-search">
+                  <a href="http://jasonrsavino.github.io/treetop/" >Treetop Theme</a>
+                  <div class="version"></div>
+                  <div role="search">
+                  <form action="http://jasonrsavino.github.io/treetop/search.html" id="rtd-search-form" class="wy-form">
+                  <input type="text" name="q" id="rtd_search_input" pattern=".{3,}" title="At least 3 characters" placeholder="Search docs" required>
+                  </form>
+                  </div>
+              </div>
+                            &nbsp;
+          </div>
+        </nav>
+
+        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+                        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+                <a href="http://jasonrsavino.github.io/treetop/">Treetop Theme</a>
+            </nav>
+
+
+                        <div class="wy-nav-content">
+                <div class="rst-content">
+                    <div role="main" class="document">
+                        <h1 id="wyrm">Wyrm</h1>
+<p>Built primarily by Dave Snider for use on his web sites. Here be documentation
+for the poor souls that have to work with him and wonder why he doesn't just
+use bootstrap.</p>
+<p>Wyrm is a small library of <a href="http://bourbon.io">Bourbon</a> powered SASS files meant
+for use in minimalistic Document and Form heavy sites. It was primarily built
+for <a href="http://www.webhook.com">Webhook</a> but can also be found in use on
+<a href="http://snide.github.com/sphinx_rtd_theme">Read the Docs sphinx theme</a> among
+other places.</p>
+<h2 id="installation">Installation</h2>
+<p>Wyrm is best installed through <a href="http://bower.io">bower</a> and is updated regularly.</p>
+<pre><code>bower install wyrm</code></pre>
+<p>By default, Wyrm installs <a href="http://fontawesome.io">Font Awesome</a> setting the
+<code>$icon-prefix</code> to FA's default of <code>fa</code>. You'll want to use <a href="http://gruntjs.org">Grunt</a>
+or some other method to copy the font files to your font folder in your project. Wyrm
+by default assumes that it is <code>../fonts/</code> relative to your css, but this variable can
+be changed with <code>$fa-font-path</code>. You can use any font icons though, and all icons
+actually used in Wyrm itself are set as variables in the <code>_wy_variables.sass</code> files.</p>
+<h2 id="things-to-know">Things to know</h2>
+<ol>
+<li>Uses indented Sass style because it's awesome.</li>
+<li><code>$base-line-height</code> is the magic number used for calculations across wyrm. <code>$gutter</code> is
+it's em based cousin usefual for grids.</li>
+<li>Because <code>$gutter</code> is an em value, I've included an <code>em()</code> mixin for converting pixels
+to ems should you need to make calculations with the two.</li>
+<li>Vertical margin is only applied to the <strong>bottom</strong> of elements, not spread
+top/bottom like other frameworks. It is always some multiple of <code>$base-line-height</code></li>
+</ol>
+<h2 id="wyrm-core--add-on-structure">Wyrm core / add-on structure</h2>
+<p>Files that you'll likely want to install are in <code>/wyrm_core/</code> and you can handly call
+all of them using the <code>_wyrm_core.sass</code> file. Alternatively, I've built a whole lot
+of addons, located in <code>/wym_addons/</code>, which you can plug and play into wyrm as you need. Most of them are
+documented here. To install core + plus all the addons, there's a handy <code>_wyrm_all.sass</code>
+file, though honestly you'll prolly just make your own document at that point.</p>
+                    </div>
+
+                    <footer>
+                        <hr/>
+                    </footer>
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script src="http://jasonrsavino.github.io/treetop/tipuesearch/tipuesearch_set.js"></script>
+    <script src="http://jasonrsavino.github.io/treetop/tipuesearch/tipuesearch.min.js"></script>
+    <script src="http://jasonrsavino.github.io/treetop/js/theme.js"></script>
+
+    <script>
+    $(document).ready(function() {
+         $('#rtd_search_input').tipuesearch({
+              'mode': 'live',
+              'show': 20,
+              'showURL': false,
+              'showTime': false
+         });
+    });
+    </script>
+
+    <script>
+        $(function() {
+            // Syntax highlighting
+            hljs.initHighlightingOnLoad();
+        });
+    </script>
+
+</body>
+</html>
