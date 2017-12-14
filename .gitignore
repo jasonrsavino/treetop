@@ -1,7 +1,9 @@
 pattern-lab
+bower_components/
 node_modules/
 .DS_Store
 .sass-cache/*
 /sass-cache
 Thumbs.db
 .idea/
+/.wakatime-project

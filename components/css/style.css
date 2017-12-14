@@ -1,1 +1,9 @@
-*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,label,table,header,footer,nav,section,figure{margin:0;padding:0}header,footer,nav,section,article,hgroup,figure{display:block}.field--type-entity-reference ul{list-style:none;margin:0 0 0.25em 0;padding:0}.field--type-entity-reference ul li{margin:0;padding:0.2em 0.5em 0 0}.field--type-entity-reference.inline__links ul li{display:inline}
+/* line 1, ../_patterns/00-atoms/01-global/_colors.scss */
+.black {
+  color: #000;
+}
+
+/* line 5, ../_patterns/00-atoms/01-global/_colors.scss */
+.logo {
+  background-image: url('../images/logo.png?1513278667');
+}

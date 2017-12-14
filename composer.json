@@ -1,0 +1,19 @@
+{
+  "name": "drupal/treetop",
+  "description": "Drupal 8 theme with Pattern Lab integration.",
+  "type": "drupal-theme",
+  "license": "GPL-2.0",
+  "version": "8.3.0-dev",
+  "homepage": "http://drupal.org/project/treetop",
+  "authors": [
+    {
+      "name": "Jason Savino (jasonsavino)",
+      "homepage": "https://www.drupal.org/u/jasonsavino",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/treetop",
+    "source": "http://cgit.drupalcode.org/treetop"
+  }
+}

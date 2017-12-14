@@ -1,11 +1,8 @@
 global-styling:
   css:
-    base:
-    component:
-    layout:
     theme:
-      components/css/style.css: {}
+      css/style.css: {}
   js:
-    components/js/all.min.js: {}
+    js/scripts.js: {}
   dependencies:
     - core/jquery

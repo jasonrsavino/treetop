@@ -4,9 +4,16 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('./package.json')
   });
 
-  grunt.loadTasks('config/grunt');
+  grunt.loadTasks('grunt');
 
-  grunt.registerTask('pl:server', ['shell:server']);
-  grunt.registerTask('pl:generate', ['shell:generate']);
-  grunt.registerTask('default', ['shell:generate']);
+  if (grunt.file.exists('./pattern-lab')) {
+    grunt.registerTask('buildPatternLab', [
+      'shell:patternLabInstall',
+      'shell:patternLabBuild'
+    ]);
+  }
+  else {
+    grunt.registerTask('buildPatternLab', []);
+  }
+
 };

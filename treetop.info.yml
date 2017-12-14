@@ -1,8 +1,8 @@
 name: treetop
 description: A Drupal theme whose Twig templates are integrated with Pattern Lab.
 type: theme
-base theme: stable
 core: 8.x
+version: VERSION
 
 libraries:
   - treetop/global-styling
