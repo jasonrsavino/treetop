@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   grunt.config.set('injector', {
     options: {
       prefix: '../../../..',
-      postfix: '?cacheBuster={{ cacheBuster }}'
+      postfix: '?{{ cacheBuster }}'
     },
     patternlab: {
       files: {

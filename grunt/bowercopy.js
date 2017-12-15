@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
   grunt.config.set('bowercopy', {
-    patternLabs: {
+    patternlab: {
       options: {
         destPrefix: 'components/drupal/',
       },
