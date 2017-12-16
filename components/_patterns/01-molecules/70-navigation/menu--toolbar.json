@@ -1,0 +1,67 @@
+{
+  "attributes": {
+      "Attribute()": {
+        "class": ["example"]
+      }
+  },
+  "items": [
+    {
+      "title": "Lorem ipsum",
+      "url": "#",
+      "attributes": {
+          "Attribute()": {
+            "class": ["first"]
+          }
+      },
+      "is_expanded": true,
+      "below": [
+          {
+            "title": "Lorem ipsum",
+            "url": "#",
+            "attributes": {
+                "Attribute()": {
+                  "class": ["first"]
+                }
+            }
+          },
+          {
+            "title": "Lorem ipsum",
+            "url": "#",
+            "attributes": {
+                "Attribute()": {
+                  "class": ["last"]
+                }
+            }
+          }
+      ]
+    },
+    {
+      "title": "Lorem ipsum",
+      "url": "#",
+      "attributes": {
+          "Attribute()": {
+            "class": []
+          }
+      }
+    },
+    {
+      "title": "Lorem ipsum",
+      "url": "#",
+      "attributes": {
+          "Attribute()": {
+            "class": []
+          }
+      }
+    },
+    {
+      "title": "Lorem ipsum",
+      "url": "#",
+      "attributes": {
+          "Attribute()": {
+            "class": ["last"]
+          }
+      }
+    }
+  ]
+}
+

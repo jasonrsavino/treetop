@@ -50,5 +50,16 @@
 
 .sg-label {
   font-size: 90%;
-  line-height: 1;
+  line-height: 1.33;
+  display: block;
+}
+
+.sg-subtype h2 {
+  border-bottom: 1px solid #333;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+}
+.sg-subtype h2 a {
+  color: inherit;
+  text-decoration: none;
 }

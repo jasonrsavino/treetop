@@ -1,0 +1,24 @@
+{
+  "heading": {
+    "level": "h2",
+    "text": "Links Heading"
+  },
+  "links": [
+    {
+      "attributes": {
+        "Attribute()": {
+          "class": ["link-item", "first"]
+        }
+      },
+      "link": "<a href=\"#\">Link 1</a>"
+    },
+    {
+      "attributes": {
+        "Attribute()": {
+          "class": ["link-item", "last"]
+        }
+      },
+      "link": "<a href=\"#\">Link 2</a>"
+    }
+  ]
+}

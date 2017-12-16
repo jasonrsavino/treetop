@@ -1,0 +1,62 @@
+{
+  "groups": [
+    {
+      "name": "Brand",
+      "items": [
+        {
+          "value": "#337ab7",
+          "variable": "$blue"
+        },
+        {
+          "value": "#5cb85c",
+          "variable": "$green"
+        },
+        {
+          "value": "#5bc0de",
+          "variable": "$blue-light"
+        },
+        {
+          "value": "#f0ad4e",
+          "variable": "$yellow"
+        },
+        {
+          "value": "#d9534f",
+          "variable": "$red"
+        },
+        {
+          "value": "#FFF",
+          "variable": "$white"
+        }
+      ]
+    },
+    {
+      "name": "Gray",
+      "items": [
+        {
+          "value": "#000",
+          "variable": "$base"
+        },
+        {
+          "value": "#222",
+          "variable": "$gray-darker"
+        },
+        {
+          "value": "#333",
+          "variable": "$gray-dark"
+        },
+        {
+          "value": "#555",
+          "variable": "$gray"
+        },
+        {
+          "value": "#777",
+          "variable": "$gray-light"
+        },
+        {
+          "value": "#EEE",
+          "variable": "$gray-lighter"
+        }
+      ]
+    }
+  ]
+}

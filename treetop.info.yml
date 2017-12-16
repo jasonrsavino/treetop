@@ -2,21 +2,45 @@ name: treetop
 description: A Drupal theme whose Twig templates are integrated with Pattern Lab.
 type: theme
 core: 8.x
-version: VERSION
+base theme: stable
 
 libraries:
   - treetop/global-styling
 
 component-libraries:
+  layouts:
+    paths:
+      - components/_layouts
   atoms:
     paths:
       - components/_patterns/00-atoms
+      - components/_patterns/00-atoms/30-lists
+      - components/_patterns/00-atoms/20-text
+      - components/_patterns/00-atoms/60-tables
+      - components/_patterns/00-atoms/40-forms
+      - components/_patterns/00-atoms/50-buttons
+      - components/_patterns/00-atoms/70-media
+      - components/_patterns/00-atoms/80-images
+      - components/_patterns/00-atoms/90-icons
+      - components/_patterns/00-atoms/10-global
   molecules:
     paths:
       - components/_patterns/01-molecules
+      - components/_patterns/01-molecules/50-forms
+      - components/_patterns/01-molecules/70-navigation
+      - components/_patterns/01-molecules/30-user
+      - components/_patterns/01-molecules/10-field
+      - components/_patterns/01-molecules/40-content
+      - components/_patterns/01-molecules/60-message
+      - components/_patterns/01-molecules/20-block
   organisms:
     paths:
       - components/_patterns/02-organisms
+      - components/_patterns/02-organisms/20-content
+      - components/_patterns/02-organisms/50-user
+      - components/_patterns/02-organisms/10-block
+      - components/_patterns/02-organisms/40-layout
+      - components/_patterns/02-organisms/30-forms
   templates:
     paths:
       - components/_patterns/03-templates

@@ -1,5 +1,7 @@
 global-styling:
   css:
+    component:
+      components/css/style.css: {}
     theme:
       css/style.css: {}
   js:

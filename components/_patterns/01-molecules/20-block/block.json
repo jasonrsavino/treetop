@@ -1,0 +1,15 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": ["contextual-region"],
+      "id": "block-template"
+    }
+  },
+  "title_attributes": {
+    "Attribute()": {
+      "id": "block-template-title"
+    }
+  },
+  "label": "Block",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+}

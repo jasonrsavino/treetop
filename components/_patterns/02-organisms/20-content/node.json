@@ -1,0 +1,33 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": ["content-type-class"]
+    }
+  },
+  "title_prefix": "<div class=\"contextual\"></div>",
+  "page": true,
+  "title_attributes": {
+    "Attribute()": {
+      "class": ["content-title"]
+    }
+  },
+  "url": "#",
+  "label": "User Name",
+  "title_suffix": "",
+  "display_submitted": false,
+  "author_picture": "",
+  "author_attributes": {
+    "Attribute()": {
+      "class": ["author-class"]
+    }
+  },
+  "author_name": "username",
+  "date": "Fri, 01/01/2010 - 20:10",
+  "metadata": "",
+  "content_attributes": {
+    "Attribute()": {
+      "class": ["content-class"]
+    }
+  },
+  "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+}

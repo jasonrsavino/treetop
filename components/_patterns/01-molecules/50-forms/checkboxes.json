@@ -1,0 +1,56 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": ["sample-checkboxes"]
+    }
+  },
+  "children": {
+      "join()": [
+          {
+            "include()": {
+              "pattern": "atoms-input",
+              "with": {
+                "attributes": {
+                  "Attribute()": {
+                    "type": ["checkbox"],
+                    "name": ["checkbox-1"]
+                  }
+                },
+                "children": "<label for=\"checkbox-1\">Label</label>"
+              },
+              "only": true
+              }
+          },
+          {
+            "include()": {
+              "pattern": "atoms-input",
+              "with": {
+                "attributes": {
+                  "Attribute()": {
+                    "type": ["checkbox"],
+                    "name": ["checkbox-2"]
+                  }
+                },
+                "children": "<label for=\"checkbox-2\">Label</label>"
+              },
+              "only": true
+              }
+          },
+          {
+            "include()": {
+              "pattern": "atoms-input",
+              "with": {
+                "attributes": {
+                  "Attribute()": {
+                    "type": ["checkbox"],
+                    "name": ["checkbox-3"]
+                  }
+                },
+                "children": "<label for=\"checkbox-3\">Label</label>"
+              },
+              "only": true
+              }
+          }
+      ]
+  }
+}

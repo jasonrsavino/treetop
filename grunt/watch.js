@@ -12,9 +12,11 @@ module.exports = function(grunt) {
         'components/_annotations/*.js',
         'components/_data/*.json',
         'components/_meta/*.twig',
+        'components/_layouts/*.twig',
         'components/_patterns/**/*.twig',
         'components/_patterns/**/*.json',
-        'components/_patterns/**/*.md'
+        'components/_patterns/**/*.md',
+        'components/_twig-components/**/*.php'
         ],
       tasks: ['shell:patternLabBuild']
     },
