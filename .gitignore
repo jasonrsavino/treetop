@@ -7,3 +7,5 @@ node_modules/
 Thumbs.db
 .idea/
 /.wakatime-project
+
+!docs/patternlab/styleguide/bower_components
