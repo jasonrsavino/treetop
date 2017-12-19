@@ -1,0 +1,27 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": []
+    }
+  },
+  "errors": "Error Message",
+  "prefix": "",
+  "suffix": "",
+  "required": true,
+  "type": "text",
+  "name": "form-element",
+  "label": "Form Element Label",
+  "label_display": "before",
+  "description": {
+    "content": "Form element description",
+    "attributes": {
+      "Attribute()": {
+        "class": []
+      }
+    }
+  },
+  "description_display": "after",
+  "title_display": "before",
+  "disabled": false,
+  "children": "atoms-input"
+}

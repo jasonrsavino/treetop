@@ -13,6 +13,6 @@
     "jquery-once": "2.2.0",
     "drupal": "http://cgit.drupalcode.org/drupal/plain/core/misc/drupal.js?h=8.4.x",
     "drupalinit": "http://cgit.drupalcode.org/drupal/plain/core/misc/drupal.init.js?h=8.4.x",
-    "drupalsettingsloader": "http://cgit.drupalcode.org/drupal/plain/core/misc/drupalSettingsLoader.js?h=8.4.x"
+    "drupalSettingsLoader": "http://cgit.drupalcode.org/drupal/plain/core/misc/drupalSettingsLoader.js?h=8.4.x"
   }
 }

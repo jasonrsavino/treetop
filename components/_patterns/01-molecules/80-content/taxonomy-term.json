@@ -1,0 +1,16 @@
+{
+  "url": "#",
+  "name": "Term Name",
+  "content": "Term description",
+  "attributes": {
+    "Attribute()": {
+      "class": []
+    }
+  },
+  "page": false,
+  "term": {
+    "id": "1",
+    "bundle": "vocab"
+  },
+  "view_mode": "full"
+}
