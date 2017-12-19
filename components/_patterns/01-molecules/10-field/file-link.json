@@ -1,9 +1,3 @@
 {
-  "attributes": {
-      "Attribute()": {
-        "type": ["application/pdf; length=2000"],
-        "class": ["button", "button-primary"]
-      }
-  },
-  "link": "<a href=\"#\">File Link</a>"
+  "link": "<a href=\"#\">File link</a>"
 }

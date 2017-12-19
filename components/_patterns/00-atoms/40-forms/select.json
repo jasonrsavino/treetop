@@ -1,4 +1,45 @@
 {
-
+  "attributes": {
+    "Attribute()": {
+      "class": ["select-class"]
+    }
+  },
+  "options": [
+    {
+      "type": "option",
+      "value": "opt-one",
+      "selected": false,
+      "label": "Option One"
+    },
+    {
+      "type": "option",
+      "value": "opt-two",
+      "selected": false,
+      "label": "Option Two"
+    },
+    {
+      "type": "option",
+      "value": "opt-three",
+      "selected": false,
+      "label": "Option Three"
+    },
+    {
+      "type": "optgroup",
+      "label": "Option group",
+      "options": [
+        {
+          "type": "option",
+          "label": "Sub Option One",
+          "selected": false,
+          "value": "grp-one"
+        },
+        {
+          "type": "option",
+          "label": "Sub Option Two",
+          "selected": false,
+          "value": "grp-two"
+        }
+      ]
+    }
+  ]
 }
-

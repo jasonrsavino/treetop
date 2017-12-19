@@ -1,4 +1,10 @@
 {
-
+  "title_display": "after",
+  "required": false,
+  "attributes": {
+    "Attribute()": {
+      "class": ["label-class"]
+    }
+  },
+  "title": "Form Element Label"
 }
-

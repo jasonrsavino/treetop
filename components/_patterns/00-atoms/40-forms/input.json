@@ -1,8 +1,8 @@
 {
   "attributes": {
     "Attribute()": {
-      "placeholder": ["Enter text here"],
-      "type": ["text"]
+      "type": ["text"],
+      "placeholder": ["Placeholder"]
     }
   }
 }

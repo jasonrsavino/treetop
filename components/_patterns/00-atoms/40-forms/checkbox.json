@@ -1,17 +1,10 @@
 {
   "attributes": {
     "Attribute()": {
-      "placeholder": ["Enter text here"],
-      "type": ["checkbox"]
+      "type": ["checkbox"],
+      "value": ["one"],
+      "id": ["checkbox-one"]
     }
   },
-  "children": {
-    "include()": {
-        "pattern": "atoms-form-element-label",
-        "with": {
-            "title": "Checkbox label"
-        },
-        "only": true
-    }
-  }
+  "children": "<label for=\"checkbox-one\">Checkbox One</label>"
 }

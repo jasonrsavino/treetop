@@ -1,4 +1,67 @@
 {
-
+  "page": {
+    "header": {
+      "include()": {
+        "pattern": "molecules-region",
+        "with": {
+          "region": "header",
+          "attributes": {
+            "Attribute()": {
+              "class": []
+            }
+          },
+          "content": {
+            "include()": {
+              "pattern": "molecules-branding"
+            }
+          }
+        },
+        "only": true
+      }
+    },
+    "primary_menu": "",
+    "secondary_menu": "",
+    "breadcrumb": "molecules-breadcrumb",
+    "content": {
+      "include()": {
+        "pattern": "molecules-region",
+        "with": {
+          "region": "content",
+          "attributes": {
+            "Attribute()": {
+              "class": []
+            }
+          },
+          "content": {
+            "join()": [
+              "atoms-page-title",
+              "atoms-paragraph",
+              "atoms-paragraph",
+              "atoms-paragraph"
+            ]
+          }
+        },
+        "only": true
+      }
+    },
+    "footer": {
+      "include()": {
+        "pattern": "molecules-region",
+        "with": {
+          "region": "footer",
+          "attributes": {
+            "Attribute()": {
+              "class": []
+            }
+          },
+          "content": {
+            "include()": {
+              "pattern": "molecules-menu"
+            }
+          }
+        },
+        "only": true
+      }
+    }
+  }
 }
-

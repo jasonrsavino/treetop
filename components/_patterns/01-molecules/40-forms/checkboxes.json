@@ -1,0 +1,13 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": ["checkboxes-class"]
+    }
+  },
+  "children": {
+    "join()": [
+      "<input type=\"checkbox\" value=\"one\" id=\"checkboxes-one\"><label for=\"checkboxes-one\">Checkbox One</label>",
+      "<input type=\"checkbox\" value=\"two\" id=\"checkboxes-two\"><label for=\"checkboxes-two\">Checkbox Two</label>"
+    ]
+  }
+}

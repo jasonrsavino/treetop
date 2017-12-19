@@ -1,0 +1,9 @@
+{% extends "@atoms/item-list.twig" %}
+
+{%
+  set classes = [
+    'search-results',
+    context.plugin ~ '-results',
+  ]
+%}
+{% set attributes = attributes.addClass(classes) %}

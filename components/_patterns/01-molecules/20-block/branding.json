@@ -1,0 +1,15 @@
+{
+  "label": false,
+  "configuration": {
+    "provider": "system"
+  },
+  "plugin_id": "system-branding-block",
+  "attributes": {
+    "Attribute()": {
+      "id": ["block-treetop-branding"]
+    }
+  },
+  "site_logo": "/themes/contrib/treetop/logo.svg",
+  "site_name": "D8 Sandbox",
+  "site_slogan": "Drupal playground"
+}

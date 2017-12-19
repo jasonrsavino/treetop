@@ -1,0 +1,19 @@
+{
+  "derivative_plugin_id": "system",
+  "configuration": {
+    "label_display": true,
+    "label": "Menu Example"
+  },
+  "title_attributes": {
+    "Attribute()": {
+      "class": []
+    }
+  },
+  "attributes": {
+    "Attribute()": {
+      "id": ["footer"],
+      "class": []
+    }
+  },
+  "content": "<ul><li>Menu Item</li><li>Menu Item</li></ul>"
+}

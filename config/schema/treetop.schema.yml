@@ -1,5 +1,3 @@
-# Schema for the configuration files of the Treetop theme.
-
 treetop.settings:
   type: theme_settings
   label: 'Treetop settings'

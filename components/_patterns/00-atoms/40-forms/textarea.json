@@ -1,4 +1,15 @@
 {
-
+  "wrapper_attributes": {
+    "Attribute()": {
+      "class": []
+    }
+  },
+  "attributes": {
+    "Attribute()": {
+      "class": []
+    }
+  },
+  "value": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "resizable": true,
+  "required": true
 }
-

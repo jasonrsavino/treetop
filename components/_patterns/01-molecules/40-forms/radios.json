@@ -1,0 +1,13 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": ["radios-class"]
+    }
+  },
+  "children": {
+    "join()": [
+      "<input type=\"radio\" value=\"one\" name=\"radios\" id=\"radio-one\"><label for=\"radio-one\">Radio One</label>",
+      "<input type=\"radio\" value=\"two\" name=\"radios\" id=\"radio-two\"><label for=\"radio-two\">Radio Two</label>"
+    ]
+  }
+}

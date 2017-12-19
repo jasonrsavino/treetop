@@ -1,15 +1,18 @@
 {
+  "label": "Block Title",
+  "configuration": {
+    "provider": "block"
+  },
+  "plugin_id": "block",
   "attributes": {
     "Attribute()": {
-      "class": ["contextual-region"],
-      "id": "block-template"
+      "id": ["block-treetop"]
     }
   },
   "title_attributes": {
     "Attribute()": {
-      "id": "block-template-title"
+      "id": ["block-title"]
     }
   },
-  "label": "Block",
-  "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 }

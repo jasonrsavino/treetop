@@ -7,6 +7,12 @@ module.exports = function(grunt) {
         reload: true
       }
     },
+    treetop: {
+      files: [
+        'treetop.theme',
+        'treetop.*.yml'
+      ]
+    },
     patternlab: {
       files: [
         'components/_annotations/*.js',
@@ -22,6 +28,7 @@ module.exports = function(grunt) {
     },
     patternlab_style: {
       files: [
+        'components/_layouts/**/*.scss',
         'components/_patterns/**/*.scss',
         'components/css/**/*.scss'
       ],

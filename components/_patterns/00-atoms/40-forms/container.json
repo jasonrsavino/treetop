@@ -1,0 +1,15 @@
+{
+  "has_parent": true,
+  "attributes": {
+    "Attribute()": {
+      "class": ["container-class"]
+    }
+  },
+  "children": {
+    "join()": [
+      "atoms-heading",
+      "atoms-horizontal-rule",
+      "atoms-paragraph"
+    ]
+  }
+}

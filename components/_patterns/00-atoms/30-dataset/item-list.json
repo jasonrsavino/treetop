@@ -1,0 +1,43 @@
+{
+  "title": "",
+  "wrapper_attributes": {
+    "Attribute()": {
+      "class": []
+    }
+  },
+  "list_type": "ul",
+  "items": [
+    {
+      "value": "Lorem ipsum dolor sit",
+      "attributes": {
+        "Attribute()": {
+          "class": ["list-item"]
+        }
+      }
+    },
+    {
+      "value": "Lorem ipsum dolor sit",
+      "attributes": {
+        "Attribute()": {
+          "class": ["list-item"]
+        }
+      }
+    },
+    {
+      "value": "Lorem ipsum dolor sit",
+      "attributes": {
+        "Attribute()": {
+          "class": ["list-item"]
+        }
+      }
+    },
+    {
+      "value": "Lorem ipsum dolor sit",
+      "attributes": {
+        "Attribute()": {
+          "class": ["list-item"]
+        }
+      }
+    }
+  ]
+}

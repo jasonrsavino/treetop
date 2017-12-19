@@ -1,49 +1,51 @@
-name: treetop
-description: A Drupal theme whose Twig templates are integrated with Pattern Lab.
+name: Treetop
+description: 'A Drupal theme in which Twig templates are integrated with Pattern Lab.'
 type: theme
+version: VERSION
 core: 8.x
-base theme: stable
+base theme: classy
 
 libraries:
-  - treetop/global-styling
+  - treetop/layouts
+  - treetop/patterns
+
+libraries-extend:
+  layout_discovery/onecol:
+    - treetop/layouts
 
 component-libraries:
-  layouts:
-    paths:
-      - components/_layouts
   atoms:
     paths:
       - components/_patterns/00-atoms
-      - components/_patterns/00-atoms/30-lists
-      - components/_patterns/00-atoms/20-text
-      - components/_patterns/00-atoms/60-tables
-      - components/_patterns/00-atoms/40-forms
-      - components/_patterns/00-atoms/50-buttons
-      - components/_patterns/00-atoms/70-media
-      - components/_patterns/00-atoms/80-images
-      - components/_patterns/00-atoms/90-icons
       - components/_patterns/00-atoms/10-global
+      - components/_patterns/00-atoms/20-text
+      - components/_patterns/00-atoms/25-content
+      - components/_patterns/00-atoms/30-dataset
+      - components/_patterns/00-atoms/40-forms
+      - components/_patterns/00-atoms/90-icons
   molecules:
     paths:
       - components/_patterns/01-molecules
-      - components/_patterns/01-molecules/50-forms
-      - components/_patterns/01-molecules/70-navigation
-      - components/_patterns/01-molecules/30-user
       - components/_patterns/01-molecules/10-field
-      - components/_patterns/01-molecules/40-content
-      - components/_patterns/01-molecules/60-message
       - components/_patterns/01-molecules/20-block
+      - components/_patterns/01-molecules/30-user
+      - components/_patterns/01-molecules/40-forms
+      - components/_patterns/01-molecules/50-layout
+      - components/_patterns/01-molecules/60-message
+      - components/_patterns/01-molecules/70-navigation
+      - components/_patterns/01-molecules/80-content
   organisms:
     paths:
       - components/_patterns/02-organisms
-      - components/_patterns/02-organisms/20-content
-      - components/_patterns/02-organisms/50-user
-      - components/_patterns/02-organisms/10-block
-      - components/_patterns/02-organisms/40-layout
-      - components/_patterns/02-organisms/30-forms
+      - components/_patterns/02-organisms/40-forms
+      - components/_patterns/02-organisms/80-content
   templates:
     paths:
       - components/_patterns/03-templates
   pages:
     paths:
       - components/_patterns/04-pages
+
+  layouts:
+    paths:
+      - components/_layouts

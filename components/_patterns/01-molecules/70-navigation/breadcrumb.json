@@ -1,4 +1,12 @@
 {
-
+  "breadcrumb": [
+    {
+      "url": "#",
+      "text": "Home"
+    },
+    {
+      "url": "#",
+      "text": "Page Title"
+    }
+  ]
 }
-

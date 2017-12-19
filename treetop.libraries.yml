@@ -1,10 +1,11 @@
-global-styling:
+patterns:
+  version: VERSION
   css:
     component:
-      components/css/style.css: {}
-    theme:
-      css/style.css: {}
-  js:
-    js/scripts.js: {}
-  dependencies:
-    - core/jquery
+      components/css/all.css: { weight: -20 }
+
+layouts:
+  version: VERSION
+  css:
+    component:
+      components/css/layouts.css: { weight: -20 }
