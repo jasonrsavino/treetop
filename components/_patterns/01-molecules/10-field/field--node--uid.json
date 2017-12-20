@@ -1,0 +1,21 @@
+{
+  "entity_type": "",
+  "field_name": "uid",
+  "field_type": "entity-reference",
+  "label_display": "hidden",
+  "attributes": {
+    "Attribute()": {
+      "class": []
+    }
+  },
+  "items": [
+    {
+      "attributes": {
+        "Attribute()": {
+          "class": []
+        }
+      },
+      "content": "atoms-username"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "id": ["edit-field-date-0-value"]
+    }
+  },
+  "content": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "molecules-form-element",
+          "with": {
+              "description": "",
+              "description_display": "invisible",
+              "title_display": "invisible",
+              "required": false,
+              "type": "date",
+              "name": "date-value",
+              "label": {
+                "include()": {
+                  "pattern": "atoms-form-element-label",
+                  "with": {
+                      "title": "Date",
+                      "title_display": "invisible"
+                  }
+                }
+              },
+              "label_display": "invisible",
+              "errors": false,
+              "children": "atoms-date"
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-form-element",
+          "with": {
+              "description": "",
+              "description_display": "invisible",
+              "title_display": "invisible",
+              "required": false,
+              "type": "time",
+              "name": "time-value",
+              "label": {
+                "include()": {
+                  "pattern": "atoms-form-element-label",
+                  "with": {
+                      "title": "Time",
+                      "title_display": "invisible"
+                  }
+                }
+              },
+              "label_display": "invisible",
+              "errors": false,
+              "children": "atoms-time"
+          }
+        }
+      }
+    ]
+  }
+}

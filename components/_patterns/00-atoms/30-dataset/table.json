@@ -1,5 +1,5 @@
 {
-  "no_striping": false,
+  "no_striping": true,
   "attributes": {
     "Attribute()": {
       "class": ["table-class"]
@@ -22,7 +22,7 @@
       "tag": "th",
       "attributes": {
         "Attribute()": {
-          "class": []
+          "class": ["table-header"]
         }
       },
       "content": "Header Two"
@@ -30,6 +30,7 @@
   ],
   "rows": [
     {
+      "no_striping": "even",
       "attributes": {
         "Attribute()": {
           "class": ["table-row"]

@@ -1,0 +1,11 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "type": ["time"],
+      "value": ["12:00"],
+      "step": "1",
+      "size": "12",
+      "title": "Time (e.g. 14:13:40)"
+    }
+  }
+}

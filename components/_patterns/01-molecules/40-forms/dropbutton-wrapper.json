@@ -1,0 +1,50 @@
+{
+  "children": {
+    "include()": {
+      "pattern": "molecules-links",
+      "only": true,
+      "with": {
+        "attributes": {
+          "Attribute()": {
+            "class": ["dropbutton"]
+          }
+        },
+        "links": [
+          {
+                  "attributes": {
+                    "Attribute()": {
+                      "class": ["edit", "dropbutton-action"]
+                    }
+                  },
+                  "link": "<a href=\"#\">Edit</a>"
+          },
+          {
+                              "attributes": {
+                    "Attribute()": {
+                      "class": ["dropbutton-toggle"]
+                    }
+                  },
+
+            "link": "<button type=\"button\"><span class=\"dropbutton-arrow\"><span class=\"visually-hidden\">List additional actions</span></span></button>"
+          },
+          {
+                  "attributes": {
+                    "Attribute()": {
+                      "class": ["delete", "dropbutton-action", "secondary-action"]
+                    }
+                  },
+                  "link": "<a href=\"#\">Delete</a>"
+          },
+          {
+                  "attributes": {
+                    "Attribute()": {
+                      "class": ["devel", "dropbutton-action", "secondary-action"]
+                    }
+                  },
+                  "link": "<a href=\"#\">Devel</a>"
+          }
+        ]
+      }
+    }
+  }
+}

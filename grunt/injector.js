@@ -8,9 +8,9 @@ module.exports = function(grunt) {
       },
       files: {
         './components/_meta/_00-head.twig': [
-            '../../../core/assets/vendor/normalize-css/normalize.css',
-            '../../../core/themes/stable/css/system/components/*.css',
-            '../../../core/themes/classy/css/components/*.css',
+            'components/drupal/core/assets/vendor/normalize-css/normalize.css',
+            'components/drupal/core/themes/stable/css/**/*.css',
+            'components/drupal/core/themes/classy/css/**/*.css',
             'components/css/all.css',
             'components/css/layouts.css',
             'css/**/*.css'

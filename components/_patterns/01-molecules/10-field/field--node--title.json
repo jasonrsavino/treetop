@@ -1,0 +1,16 @@
+{
+  "entity_type": "",
+  "field_name": "title",
+  "field_type": "string",
+  "label_display": "hidden",
+  "attributes": {
+    "Attribute()": {
+      "class": []
+    }
+  },
+  "items": [
+    {
+      "content": "Node Title Example"
+    }
+  ]
+}

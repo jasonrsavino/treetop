@@ -12,14 +12,32 @@
           },
           "content": {
             "include()": {
-              "pattern": "molecules-branding"
+              "pattern": "molecules-branding-block"
             }
           }
         },
         "only": true
       }
     },
-    "primary_menu": "",
+    "primary_menu": {
+      "include()": {
+        "pattern": "molecules-region",
+        "with": {
+          "region": "primary-menu",
+          "attributes": {
+            "Attribute()": {
+              "class": []
+            }
+          },
+          "content": {
+            "include()": {
+              "pattern": "molecules-menu-block"
+            }
+          }
+        },
+        "only": true
+      }
+    },
     "secondary_menu": "",
     "breadcrumb": "molecules-breadcrumb",
     "content": {

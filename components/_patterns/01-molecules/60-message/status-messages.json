@@ -1,0 +1,23 @@
+{
+  "status_headings": {
+    "status": "Status Message",
+    "error": "Error Message",
+    "warning": "Warning Message"
+  },
+  "attributes": {
+    "Attribute()": {
+      "class": []
+    }
+  },
+  "message_list": {
+    "status": [
+      "Status message displays like this"
+    ],
+    "warning": [
+      "Warning message displays like this"
+    ],
+    "error": [
+      "Error message displays like this"
+    ]
+  }
+}

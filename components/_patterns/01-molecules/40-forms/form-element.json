@@ -10,7 +10,15 @@
   "required": true,
   "type": "text",
   "name": "form-element",
-  "label": "Form Element Label",
+  "label": {
+    "include()": {
+      "pattern": "atoms-form-element-label",
+      "with": {
+          "title": "Date",
+          "title_display": "before"
+      }
+    }
+  },
   "label_display": "before",
   "description": {
     "content": "Form element description",

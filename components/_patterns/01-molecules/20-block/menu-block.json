@@ -1,0 +1,19 @@
+{
+  "derivative_plugin_id": "system",
+  "configuration": {
+    "label_display": true,
+    "label": "Main Navigation"
+  },
+  "title_attributes": {
+    "Attribute()": {
+      "class": []
+    }
+  },
+  "attributes": {
+    "Attribute()": {
+      "id": ["main"],
+      "class": []
+    }
+  },
+  "content": "molecules-menu"
+}

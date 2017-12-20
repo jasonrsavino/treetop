@@ -1,0 +1,16 @@
+{
+  "entity_type": "",
+  "field_name": "created",
+  "field_type": "created",
+  "label_display": "hidden",
+  "attributes": {
+    "Attribute()": {
+      "class": []
+    }
+  },
+  "items": [
+    {
+      "content": "12/31/2017 - 12:00"
+    }
+  ]
+}

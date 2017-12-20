@@ -1,0 +1,47 @@
+{
+  "current": 5,
+  "ellipses": {
+    "previous": true,
+    "next": true
+  },
+  "items": {
+    "pages": {
+      "3": {
+        "href": "#",
+        "text": "page 3"
+      },
+      "4": {
+        "href": "#",
+        "text": "page 4"
+      },
+      "5": {
+        "href": "#",
+        "text": "page 5"
+      },
+      "6": {
+        "href": "#",
+        "text": "page 6"
+      },
+      "7": {
+        "href": "#",
+        "text": "page 7"
+      }
+    },
+    "first": {
+      "href": "#",
+      "text": "first"
+    },
+    "previous": {
+      "href": "#",
+      "text": "previous"
+    },
+    "next": {
+      "href": "#",
+      "text": "next"
+    },
+    "last": {
+      "href": "#",
+      "text": "last"
+    }
+  }
+}
