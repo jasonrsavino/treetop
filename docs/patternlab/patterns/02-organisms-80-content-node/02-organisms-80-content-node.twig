@@ -76,7 +76,7 @@
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
-    not node.isPublished() ? 'node--unpublished',
+    not pl ? not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
@@ -95,7 +95,8 @@
     <footer class="node__meta">
       {{ author_picture }}
       <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        {% set submitted = "Submitted by " ~ author_name ~  " on " ~ date %}
+        {{ submitted|t }}
         {{ metadata }}
       </div>
     </footer>

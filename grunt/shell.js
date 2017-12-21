@@ -1,5 +1,4 @@
 module.exports = function(grunt) {
-
   grunt.config.set('shell', {
     patternLabInstall: {
       command: 'composer install',
@@ -18,6 +17,20 @@ module.exports = function(grunt) {
       }
     }
   });
+
+  if (grunt.option('alias')) {
+    var alias = grunt.option('alias');
+    if (typeof(alias) === 'boolean') {
+      alias = 'default';
+    }
+    grunt.config.merge({
+      shell: {
+        cacheRebuild: {
+          command: 'drush ' + alias + ' cr',
+        }
+      }
+    });
+  }
 
   grunt.loadNpmTasks('grunt-shell');
 };

@@ -1,0 +1,20 @@
+{
+  "header": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "organisms-region",
+          "only": false,
+          "with": {
+            "region": "header",
+            "content": {
+              "include()": {
+                "pattern": "molecules-branding-block"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

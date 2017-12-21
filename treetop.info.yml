@@ -30,14 +30,15 @@ component-libraries:
       - components/_patterns/01-molecules/20-block
       - components/_patterns/01-molecules/30-user
       - components/_patterns/01-molecules/40-forms
-      - components/_patterns/01-molecules/50-layout
       - components/_patterns/01-molecules/60-message
       - components/_patterns/01-molecules/70-navigation
       - components/_patterns/01-molecules/80-content
   organisms:
     paths:
       - components/_patterns/02-organisms
+      - components/_patterns/02-organisms/10-global
       - components/_patterns/02-organisms/40-forms
+      - components/_patterns/02-organisms/50-layout
       - components/_patterns/02-organisms/80-content
   templates:
     paths:

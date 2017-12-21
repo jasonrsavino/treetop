@@ -8,6 +8,11 @@
       }
     }
   },
+  "attributes": {
+    "Attribute()": {
+      "class": ["links"]
+    }
+  },
   "links": [
     {
       "text": "List Item 1"

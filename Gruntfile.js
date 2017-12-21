@@ -11,6 +11,7 @@ module.exports = function (grunt) {
       'shell:patternLabInstall',
       'compass:patternlab',
       'bowercopy:patternlab',
+      'copy',
       'injector:patternlab',
       'shell:patternLabBuild'
     ]);
@@ -20,6 +21,12 @@ module.exports = function (grunt) {
   }
 
   grunt.registerTask('install', ['buildPatternLab']);
-  grunt.registerTask('default', ['buildPatternLab', 'compass:treetop', 'watch']);
+
+  if (grunt.option('alias')) {
+    grunt.registerTask('default', ['install', 'compass:treetop', 'shell:cacheRebuild', 'watch']);
+  }
+  else {
+    grunt.registerTask('default', ['install', 'compass:treetop', 'watch']);
+  }
 
 };
