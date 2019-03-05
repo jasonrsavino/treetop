@@ -1,0 +1,30 @@
+{
+    "name":             "jasonrsavino/starterkit-treetop",
+    "description":      "Base StarterKit for Drupal Theme.",
+    "keywords":         ["twig", "pattern lab", "starterkit", "treetop", "drupal"],
+    "license":          "GPL-3.0+",
+    "type":             "patternlab-starterkit",
+    "authors": [
+        {
+            "name":         "Jason Savino",
+            "email":        "jasonrsavino@gmail.com",
+            "role":         "Creator"
+        }
+    ],
+    "support": {
+        "issues":         "https://github.com/jasonrsavino/starterkit-treetop/issues"
+    },
+    "require": {
+        "pattern-lab/core": "^2.0.0",
+        "pattern-lab/patternengine-twig": "^2.0.0"
+    },
+    "extra": {
+        "patternlab": {
+            "dist": {
+                "sourceDir": [
+                    { "*": "*" }
+                ]
+            }
+        }
+    }
+}

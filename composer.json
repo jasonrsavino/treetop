@@ -1,5 +1,5 @@
 {
-  "name": "drupal/treetop",
+  "name": "kanopi/treetop",
   "description": "Drupal 8 theme with Pattern Lab integration.",
   "type": "drupal-theme",
   "license": "GPL-2.0",
@@ -7,13 +7,31 @@
   "homepage": "http://drupal.org/project/treetop",
   "authors": [
     {
-      "name": "Jason Savino (jasonsavino)",
+      "name": "Jason Savino",
       "homepage": "https://www.drupal.org/u/jasonsavino",
-      "role": "Maintainer"
+      "role": "Creator"
     }
   ],
   "support": {
     "issues": "https://www.drupal.org/project/issues/treetop",
     "source": "http://cgit.drupalcode.org/treetop"
-  }
+  },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
+    "require": {
+        "drupal/components": "^1.0",
+        "drupal-pattern-lab/add-attributes-twig-extension": "^1.0",
+        "drupal-pattern-lab/attach-library-twig-extension": "^1.0",
+        "drupal-pattern-lab/unified-twig-extensions": "^0.1",
+        "jasonrsavino/starterkit-treetop": "^1.0"
+    },
+    "require-dev": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {},
+    "extra": []
 }
