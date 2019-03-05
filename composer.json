@@ -3,11 +3,12 @@
   "description": "Drupal 8 theme with Pattern Lab integration.",
   "type": "drupal-theme",
   "license": "GPL-2.0",
-  "version": "8.3.0-dev",
+  "version": "8.3.0",
   "homepage": "http://drupal.org/project/treetop",
   "authors": [
     {
       "name": "Jason Savino",
+      "email": "jason@kanopistudios.com",
       "homepage": "https://www.drupal.org/u/jasonsavino",
       "role": "Creator"
     }
@@ -26,8 +27,7 @@
         "drupal/components": "^1.0",
         "drupal-pattern-lab/add-attributes-twig-extension": "^1.0",
         "drupal-pattern-lab/attach-library-twig-extension": "^1.0",
-        "drupal-pattern-lab/unified-twig-extensions": "^0.1",
-        "jasonrsavino/starterkit-treetop": "^1.0"
+        "drupal-pattern-lab/unified-twig-extensions": "^0.1"
     },
     "require-dev": {},
     "minimum-stability": "dev",

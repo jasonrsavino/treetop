@@ -1,131 +1,15 @@
 <!DOCTYPE html>
 <html class="{{ htmlClass }}">
-  <head>
-    <title>{{ title }}</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" />
+	<head>
+		<title>{{ title }}</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
 
-    <!-- injector:css -->
-    <link rel="stylesheet" href="../../css/assets/vendor/normalize-css/normalize.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/block/block.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/ckeditor/ckeditor-iframe.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/ckeditor/ckeditor.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/ckeditor/ckeditor.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/ckeditor/plugins/drupalimagecaption/ckeditor.drupalimagecaption.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/ckeditor/plugins/language/ckeditor.language.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/color/color.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/config_translation/config_translation.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/content_translation/content_translation.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/contextual/contextual.icons.theme.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/contextual/contextual.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/contextual/contextual.theme.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/contextual/contextual.toolbar.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/core/dropbutton/dropbutton.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/core/print.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/core/vertical-tabs.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/dblog/dblog.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/field_ui/field_ui.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/file/file.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/filter/filter.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/filter/filter.caption.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/image/editors/image.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/image/editors/image.theme.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/image/image.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/language/language.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/locale/locale.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/menu_ui/menu_ui.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/node/node.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/node/node.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/node/node.preview.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/quickedit/quickedit.icons.theme.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/quickedit/quickedit.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/quickedit/quickedit.theme.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/shortcut/shortcut.icons.theme.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/shortcut/shortcut.theme.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/simpletest/simpletest.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/ajax-progress.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/align.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/autocomplete-loading.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/clearfix.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/container-inline.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/details.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/fieldgroup.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/hidden.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/item-list.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/js.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/nowrap.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/position-container.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/progress.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/reset-appearance.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/resize.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/sticky-header.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/system-status-counter.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/system-status-report-counters.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/system-status-report-general-info.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/tabledrag.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/tablesort.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/components/tree-child.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/system.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/system.diff.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/system/system.maintenance.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/taxonomy/taxonomy.theme.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/toolbar/toolbar.icons.theme.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/toolbar/toolbar.menu.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/toolbar/toolbar.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/toolbar/toolbar.theme.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/tour/tour.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/update/update.admin.theme.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/user/user.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/user/user.icons.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/user/user.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/views/views.module.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/views_ui/views_ui.admin.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/views_ui/views_ui.admin.theme.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/stable/css/views_ui/views_ui.contextual.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/action-links.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/book-navigation.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/breadcrumb.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/button.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/collapse-processed.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/container-inline.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/details.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/dialog.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/dropbutton.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/exposed-filters.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/field.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/file.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/form.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/forum.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/icons.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/image-widget.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/indented.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/inline-form.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/item-list.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/link.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/links.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/menu.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/messages.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/more-link.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/node.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/pager.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/progress.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/search-results.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/tabledrag.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/tableselect.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/tablesort.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/tabs.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/textarea.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/ui-dialog.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/classy/css/components/user.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/all.css?{{ cacheBuster }}">
-    <link rel="stylesheet" href="../../css/layouts.css?{{ cacheBuster }}">
-    <!-- endinjector -->
+		<link rel="stylesheet" href="../../css/styles.css?{{ cacheBuster }}" media="all" />
 
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?{{ cacheBuster }}" media="all" />
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		{{ patternLabHead | raw }}
+		<!-- End Pattern Lab -->
 
-    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-    {{ patternLabHead | raw }}
-    <!-- End Pattern Lab -->
-
-  </head>
-  <body class="{{ bodyClass }}">
+	</head>
+	<body class="{{ bodyClass }}">
